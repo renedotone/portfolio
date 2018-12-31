@@ -5,16 +5,17 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
         <header>
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav">
+                <li class="nav"><a href="#portfolio">Portfolio</a></li>
+                <li class="nav"><a href="#resume">Resume</a></li>
+                <li class="nav"><a href="#skills">Skills</a></li>
+                <li class="nav"><a href="#contact">Contact</a></li>
             </ul>
         </header>
 
@@ -36,7 +37,7 @@
             <div class="row">
                 <div class="column">
                     <div class="content">
-                        <img src="img/gorilla.jpg" alt="Gorilla" style="width:100%">
+                        <a href="index.html"><img src="img/gorilla.jpg" alt="Portfolio" style="width:100%"></a>
                         <h3>Portfolio</h3>
                         <p>In december 2018 I created a portfolio to show my work.</p>
                     </div>
@@ -63,9 +64,7 @@
           
             <div class="text-block">
                 <img id="logo" src="img/CodeGorilla_logo.png" alt="CodeGorilla" style="">
-                <h4 id="logotext">Bootcamp web development<br></h4>
-                    
-                
+                <h4 id="logotext">Bootcamp CodeGorilla<br></h4>
             </div>
 
             <div class="text-block">
@@ -77,8 +76,77 @@
                 <h2>Skills</h2>
             </div>  
 
+            <div class="row2">
+                <div class="column2">
+                    <span style="font-size: 6em; color: #E34C26;">
+                        <i class="fab fa-html5"></i>
+                    </span>
+                    <p id="htmltext">HTML</p>
+                </div>
+                <div class="column2">
+                    <span style="font-size: 6em; color: #1E2F5C;">
+                        <i class="fab fa-css3-alt"></i>
+                    </span>
+                    <p id="csstext">CSS</p>
+                </div>
+                <div class="column2">
+                    <span style="font-size: 6em; color: #F0DB4F;">
+                        <i class="fab fa-js-square"></i>
+                    </span>   
+                    <p id="jstext">JavaScript</p>
+                </div>
+                <div class="column2">
+                    <span style="font-size: 6em; color: #8892be;">
+                        <i class="fab fa-php"></i>
+                    </span>
+                    <p id="phptext">PHP</p>
+                </div>
+            </div>
+            
+            <div class="skilhead" id="contact">
+                <h2>Contact</h2>
+            </div>  
+        
+            <div class="container">
+                <form action="/action_page.php">
+                    <label for="fname"></label>
+                    <input type="text" id="fname" name="name" placeholder="Your Name">
+                
+                    <label for="lname"></label>
+                    <input type="text" id="ename" name="email" placeholder="Your E-mail">
+                
+                    <label for="sname"></label>
+                    <input type="text" id="sname" name="subject" placeholder="Subject">
+                
+                    <label for="subject"></label>
+                    <textarea id="subject" name="subject" placeholder="Your Message" style="height:200px"></textarea>
+                
+                    <a href="#"><input type="submit" value="Submit"></a>
+                </form>
+            </div>
+               
+            <div id="socialmedia">
+                <ul class="social">
+                    <li class="social">
+                        <span style="font-size: 2.5em; align-content: center">
+                            <a href="https://www.linkedin.com/in/renedotone/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </span> 
+                    </li>
+
+                    <li class="social">
+                        <span style="font-size: 2.5em; align-content: center">
+                            <a href="https://github.com/renedotone" target="_blank"><i class="fab fa-github"></i></a>
+                        </span>
+                    </li>
+
+                    <li class="social">   
+                        <span style="font-size: 2.5em; align-content: center">
+                            <a href="https://twitter.com/renedotone" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
         </main>
-
     </body>
-
 </html>
